@@ -118,7 +118,7 @@ section{
 
 @media (max-width: 575.98px) {
 	section{
-        width: 350px;
+        width: 90%;
     }
 
     #form article{
