@@ -120,4 +120,8 @@ section{
 	section{
         width: 350px;
     }
+
+    #form article{
+        margin-top: 15px;
+    }
 }
