@@ -34,7 +34,7 @@ botao.addEventListener('click', ()=>{
     console.log("erro 3")
    }
    else{
-    document.getElementById("resultado").textContent = `Olá ${nome}, ${valorPorc}% de ${valorTotal} é igual á: R$${soma}!`
+    document.getElementById("resultado").textContent = `Olá ${nome}, ${valorPorc}% de ${valorTotal} é exatamente: R$${soma}!`
    }
 
 })
