@@ -6,52 +6,118 @@
 html,body{
     height: 100vh;
     font-family: 'Arial', sans-serif;
+ 
+}
+
+#titulo{
+    margin-top: 40px;
+    text-align: center;
+}
+#titulo h1::after{
+    content: '';
+	display: block;
+	margin: 10px auto;
+	width: 65%;
+	height: 8px;
+	border-radius: 6px;
+	background: linear-gradient(135deg, rgb(0, 255, 34) 10%, #ffffff);
+}
+#titulo h1::before {
+    content: '';
+    display: block;
+    margin: 10px auto;
+    width: 65%;
+    height: 8px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #ffffff 10%, #00c3ff);
+}
+
+
+#geral{
+    width: 100%;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 section{
     width: 50%;
     width: 500px;
     height: 550px;
-    border: solid 2px red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(154,88,159);
+    background: linear-gradient(297deg, rgba(154,88,159,1) 18%, rgba(150,128,218,1) 49%, rgba(221,134,207,1) 97%);
+    border-radius: 10px;
+}
+
+#form{
+    position: relative;
+    width: 90%;
+    height: 90%;
+}
+.validacao{
+    padding: 0;
+    margin: 0;
+    right: 0;
+    position: absolute;
+}
+#form article{
+    margin-top: 10px;
+}
+#form article label{
+    display: block;
+    font-size: 1.2rem;
+    color: rgb(39, 39, 39);
+}
+#form article input{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    background: rgb(238, 238, 238);
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+#form article button{
+    width: 100%;
+    height: 45px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: rgb(65, 65, 65);
+    color: rgb(236, 236, 236);
+}
+#form article button:hover{
+    background: rgb(92, 92, 92);
+}
+#form .botao{
+    margin-top: 25px;
+}
+
+#form #div_text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background: rgb(221, 232, 252);
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-form{
-    position: relative;
-    border: solid 2px green;
-    width: 90%;
-    height: 90%;
-}
-form article{
-    margin-top: 10px;
-}
-form article label{
-    display: block;
-    font-size: 1.2rem;
-}
-form article input{
-    width: 100%;
-    height: 40px;
-    padding-left: 10px;
-}
-form article button{
-    width: 100%;
-    height: 45px;
-    font-size: 1.4rem;
-}
-form .botao{
-    margin-top: 25px;
+#form #div_text #resultado{
+    margin: 20px;
+    font-size: 1.6em;
+    color: crimson;
 }
 
-form div{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    background: rgb(214, 229, 255);
+@media (max-width: 575.98px) {
+	section{
+        width: 350px;
+    }
 }

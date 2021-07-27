@@ -8,28 +8,38 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <section>
-        <form>
-            <article>
-                <label>Nome:</label>
-                <input type="text" placeholder="Seu nome">
-            </article>
-            <article>
-                <label>Valor da mesa(Total:)</label>
-                <input type="number" placeholder="EX: 134.50">
-            </article>
-            <article>
-                <label>Porcentagem do Garçon:</label>
-                <input type="number" placeholder="Ex: 10">
-            </article>
-            <article class="botao">
-                <button>Somar</button>
-            </article>
 
-            <div>
+    <div id="titulo"><h1>Calculadora de Gorjeta</h1></div>
 
+    <div id="geral">
+        <section>
+            <div id="form">
+                <article>
+                    <label>Nome:</label>
+                    <input id="nome" type="text" placeholder="Seu nome">
+                    <p class="validacao" id="erro1"></p>
+                </article>
+                <article>
+                    <label>Valor da mesa(Total:)</label>
+                    <input id="valorTotal" type="number" placeholder="EX: 134.50 (Números positivos)">
+                    <p class="validacao" id="erro2"></p>
+                </article>
+                <article>
+                    <label>Porcentagem do Garçon:</label>
+                    <input id="valorPorc" type="number" placeholder="Ex: 10 (Números positivos)">
+                    <p class="validacao" id="erro3"></p>
+                </article>
+                <article class="botao">
+                    <button id="botao">Somar</button>
+                </article>
+
+                <div id="div_text">
+                    <p id="resultado"></p>
+                </div>
             </div>
-        </form>
-    </section>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
